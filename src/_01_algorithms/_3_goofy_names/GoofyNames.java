@@ -20,22 +20,25 @@ System.out.println(glitter.toUpperCase());
 		for(int bomb=0; bomb<glitter.length();bomb++) {
 				// 4. Create a char variable to store the next character of the name
 				//    use .charAt()
-			char music=glitter.charAt(1);
+			char music=glitter.charAt(bomb);
 				
 				// 5. Use % to tell what letter is even or odd 
-			//bomb ohhhh ok  soo my question is what variable goes in the blank
+		
 			if(bomb % 2==0) {
-			
-			
+			goofyName = goofyName + Character.toUpperCase(music);
 				// 6. Even characters should be made uppercase and odd characters made lowercase
 				//    HINT: use Character.toUpperCase() or Character.toLowerCase()
-				
-			//For Next Time!! How to make a even letter uppercase
+			}
+			else {
+				goofyName=goofyName+Character.toLowerCase(music);
+			}
+		
 				// 7. ADD the char to the end of the goofyName String
 
 		}
 		// 8. Use pop-up to show user their Goofy name
-
+JOptionPane.showMessageDialog(null,goofyName);
 	}
-}
+	}
+
 
