@@ -1,9 +1,13 @@
 
   /*** Go to the recipe to run the demonstration before starting this program ***/
 int x = 200;
+int cookie= 850;
 int speed = 1;
+int speed2 = 1;
 int sizeW=855;
-int z=-30;
+int size2=855;
+int z=135;
+
 void setup() {
   /* Set the size of your sketch to be a rectangle like in the recipe demonstration */
   size(1000,500);
@@ -31,7 +35,7 @@ int h=300;
         /*When the rings reach the right side of the sketch, reverse the direction so they move.
         Hint: speed = -speed */
 if(x>=sizeW){
-      speed=-speed;   
+    speed=-speed;   
 }
         /*When the rings reach the left side of the sketch, reverse the direction again */
       if(x<=z){
@@ -40,9 +44,19 @@ if(x>=sizeW){
  //CHALLENGE - to finish the Amazing Rings 
  
         /*Add another for loop to draw the second set of rings that will start in the right half of the window */
-        
-        
-        /*Make this set of rings move in the opposite direction to the other rings 
+    int wh=300;
+
+  for(int a =0;a<8;a++){
+    ellipse(cookie,200,wh,wh);
+ wh-=30;      
+}
+       /*Make this set of rings move in the opposite direction to the other rings 
         These rings must also "bounce" off the sides of the window.*/
-        
+         cookie+=speed2;
+        if(cookie>=size2){
+       speed2=-speed2;
+        }
+        if(cookie<=z){
+       speed2=-speed2; 
+  } 
 }
