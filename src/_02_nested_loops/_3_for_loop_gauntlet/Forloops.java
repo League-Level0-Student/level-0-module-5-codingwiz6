@@ -36,8 +36,19 @@ public class Forloops {
 		for(int g=0;g<10;g++) {
 			System.out.println( "In "+(year+g)+", I was "+g+" years old");
 		}
-		
-
+		for(int h=0;h<3;h++) {		
+			for(int i=0;i<3;i++) {
+	System.out.println(h+""+i);
+}
+	
+}
+		for(int j=0;j<7;j+=3) {
+			for(int k=1+j;k<4+j;k++) {
+			System.out.print(k);	
+			}
+			System.out.println();
+		}
+		//For Next Week: Do 3 for Nested Loops! Good Luck! ;)
 	}
 
 }
