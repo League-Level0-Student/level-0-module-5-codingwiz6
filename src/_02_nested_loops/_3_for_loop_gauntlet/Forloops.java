@@ -42,13 +42,32 @@ public class Forloops {
 }
 	
 }
+		/*
+		 * 1 2 3 4 5 6 7 8 9 10
+		 * 11 12 13 14 15 16 17 18 19 20
+		 * 21 22 23 24 25 26 27 28 29 30
+		 * 31 32 33 34 35 36 37 38 39 40
+		 * 41
+		 * 51
+		 * ...
+		 * 91 92 93 94 95 
+		 */
 		for(int j=0;j<7;j+=3) {
 			for(int k=1+j;k<4+j;k++) {
-			System.out.print(k);	
+			System.out.print(k );	
 			}
 			System.out.println();
 		}
-		//For Next Week: Do 3 for Nested Loops! Good Luck! ;)
-	}
+		for(int l=0;l<91;l+=10) {
+			for(int m=1+l;m<11+l;m++) {
+				System.out.print(m);
+			}
+			System.out.println();
+		}
+		//For Next Week: Figure out how to make layers! You can do it!
+		for(int n=0;n<22;n++) {
+			System.out.print(n);
+		}
+		}
+		}
 
-}
