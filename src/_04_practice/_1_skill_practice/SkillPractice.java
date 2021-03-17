@@ -65,6 +65,7 @@ void skill3() { // Get a random number that is less than 20 and print it to the 
 	
 	Random randy = new Random();
 	int randNum = randy.nextInt(21-10+1)+10; 
+	System.out.println(randNum);
 	
 	//int eq = randy.nextInt(big-small+1)+small
 	//int x = randy.nextInt(26)+10; //0-10  10-35
@@ -72,7 +73,7 @@ void skill3() { // Get a random number that is less than 20 and print it to the 
 
 // Get another random number that is less than 10 and print it to the console
 int randNum2=randy.nextInt(11);
-
+System.out.println(randNum2);
 
 // Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction
 int randtotalNum= randNum-randNum2;
@@ -91,32 +92,40 @@ if(city.equalsIgnoreCase("San Diego")) {
 
 
 // Otherwise, tell them to move to San Diego
-else if {
+else {
 	JOptionPane.showMessageDialog(null,"You should move to San Diego,");
 }
 
 
 // Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation."
+int cars=2;
 
-
-
+if(cars==0) {
+	JOptionPane.showMessageDialog(null, "I bet you use public transportion.");
+}
 // If there is 1 car, use a pop-up to display the make/model of the car
-
+if(cars==1) {
+JOptionPane.showMessageDialog(null, "'64 Chevy Chevelle 55 ");	
+}
 
 
 // If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them.
-
+int cars2=cars*4;
+if(cars>1) {
+	JOptionPane.showMessageDialog(null, "You have "+cars2+" wheels!");
+	
+}
 
 
 }
 
 void skill5() { // In a pop-up, ask the user for the name of their school
 
-
+String school=JOptionPane.showInputDialog(null, "What is your school's name?");
 
 // In another pop-up, tell the user, that their school is a fantastic school. // You must include the name of the school in the message.
 
-
+JOptionPane.showMessageDialog(null, school+" is nice school! ");
 
 }
 }
